@@ -15,7 +15,7 @@ public class SortList {
     /*
     考察：
     （1）快慢指针。两个指针，一个slow，一个fast，slow一步一步地走，fast两步两步地走。fast走到终点的时候，slow刚好走到中点。
-    （2）归并排序。
+    （2）归并排序。分成两部分，分别排序后归并。
     */
     public ListNode sortList(ListNode head) {
         if(head==null || head.next==null) return head;
